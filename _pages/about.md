@@ -6,7 +6,7 @@ permalink: /
 
 profile:
   align: left
-  image: prof_pic_4.jpg
+  image: prof_pic_2.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p><a href="mailto:hieuhocnlp@gmail.com">hieuhocnlp@gmail.com</a></p>
