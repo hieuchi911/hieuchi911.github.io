@@ -2,12 +2,16 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+# description: A growing collection of your cool projects.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [research, engineering, fun]
 horizontal: false
 ---
+
+My current research is on faithfulness and factuality of LLMs. I also want to work on combatting misinformation. Other research experiences include [Vision-language in Robotics](https://github.com/hieuchi911/LLaMA-Factory-Sober) and Deep learning system testing at [DeepUSC Research](https://deep-usc.org/people).
+
+Beyond my research and engineering projects, I enjoy covering songs and making music videos.
 
 <!-- pages/projects.md -->
 <div class="projects">
@@ -15,7 +19,7 @@ horizontal: false
   <!-- Display categorized projects -->
   {% for category in page.display_categories %}
   <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
+    <h2 class="category" style="color: #828282"> {{ category }}</h2>
   </a>
   {% assign categorized_projects = site.projects | where: "category", category %}
   {% assign sorted_projects = categorized_projects | sort: "importance" %}
