@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Accepted to the [2020 MOST GASE Global Talent Internship Program (Artificial Intelligence X Green Technology)](https://gasesummer.most.ntu.edu.tw/) to work at Perobot Co. (canceled due to COVID-19)
+Accepted to the [2020 MOST GASE Global Talent Internship Program (Artificial Intelligence X Green Technology)](https://drive.google.com/file/d/1O3aAvndAYaR6wNrEHRQSPrmDgoFF1lUI/view?usp=sharing) to work at Perobot Co. (canceled due to COVID-19)
