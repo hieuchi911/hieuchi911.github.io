@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I was awarded the prestigious [Vingroup Science and Technology Scholarship Program for Overseas Study for Master’s and Doctoral Degrees for Vietnamese Students](https://scholarships.vinuni.edu.vn/cohort-2022/#:~:text=NGUYEN%20TRAN%20CHI%20HIEU), enabling me to pursue the Master's degree at USC.
+Awarded the [Vingroup Science and Technology Scholarship for Overseas Graduate Study for Vietnamese Students](https://scholarships.vinuni.edu.vn/cohort-2022/#:~:text=NGUYEN%20TRAN%20CHI%20HIEU), enabling me to pursue the Master's degree at USC.
