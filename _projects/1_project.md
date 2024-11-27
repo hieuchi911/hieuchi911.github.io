@@ -89,6 +89,6 @@ As we progress, we want to verify the hypothesis with more model families like L
 <h5><b>Future works</b></h5>
 
 There are many questions that I want to explore next:
-- Other factors causing hallucination: exposure bias, data imbalance, attend-to-all mechanism that distract models, etc. 
 - Does a model's tendency to generate inaccurate information from its internal knowledge (factual hallucination) lead to generation of inaccurate responses when given contexts (faithfulness hallucination)? Could addressing the former also mitigate the latter?
 - Are acquired improvements on external metrics were merely due to better task fulfillment instead of hallucination-free reasoning? This is because these metrics only compare prediction text to ground truth text, while hallucination can be subtle and requires non-trivial reasoning to identify. In fact, we've already started tackling this question with internal metrics and proved the effectiveness of external metrics.
+- Other factors causing hallucination: exposure bias, data imbalance, attend-to-all mechanism that distract models, etc. 

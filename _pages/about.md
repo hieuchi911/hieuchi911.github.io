@@ -16,8 +16,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a Deep Learning Research Engineer volunteer at [USC Information Sciences Institute (ISI)](https://www.isi.edu/), where I work with senior PhD candidate [Zihao He](https://zihaohe123.github.io/) under the guidance of Prof. [Kristina Lerman](https://www.isi.edu/people/lerman/about).
+I am a Deep Learning Research Engineer volunteer at [USC Information Sciences Institute (ISI)](https://www.isi.edu/), where I work with senior PhD candidate [Zihao He](https://zihaohe123.github.io/) under the guidance of Prof. [Kristina Lerman](https://www.isi.edu/people/lerman/about). Before this, I was a Fellow Researcher at [DeepUSC Research Group](https://deep-usc.org/people#:~:text=Hieu%20Nguyen%20Tran%20Chi), working under the guidance of Dr. [Iordanis Fostiropoulos](https://iordanis.me/).
 
-My research interests center on improving the Faithfulness/Factuality and Efficiency of Language Models. Methodologically, I study modeling methods (novel training and evaluation paradigms, model architectures) and data-driven methods (improving curation of data and more robust metrics). I am currently working on the effects of Knowledge Distillation on reducing hallucinations in LLMs.
+My research interests center on improving and to better evaluating <b>Faithfulness and Factuality of Language Models</b>, focusing on data-driven and modeling methodologies. I am currently working on the effects of Knowledge Distillation on reducing hallucinations in LLMs.
 
 I received my Master's degree in Computer Science from the University of Southern California. Prior to this, I receieved a Bachelor's degree in Information Technology from International University, Vietnam National University - Ho Chi Minh City.
