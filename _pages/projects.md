@@ -9,7 +9,7 @@ display_categories: [research, engineering, fun]
 horizontal: false
 ---
 
-My current research is on faithfulness and factuality of LLMs. I also want to work on combatting misinformation. Other research experiences include [Vision-language in Robotics](https://github.com/hieuchi911/LLaMA-Factory-Sober) and Deep learning system testing at [DeepUSC Research](https://deep-usc.org/people).
+My current research is on improving and better evaluating Faithfulness and Factuality of Language Models, focusing on data-driven and modeling methodologies. I also want to work on combatting misinformation. Other research experiences include [Vision-language in Robotics](https://github.com/hieuchi911/LLaMA-Factory-Sober) and Deep learning system testing at [DeepUSC Research](https://deep-usc.org/people), etc. A full list of past projects can be found in my [resume](https://hieuchi911.github.io/assets/pdf/my_resume.pdf).
 
 Beyond my research and engineering projects, I enjoy covering songs and making music videos.
 
