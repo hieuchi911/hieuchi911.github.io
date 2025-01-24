@@ -47,19 +47,22 @@ To verify my hypothesis, I instruction finetuned Llama-2-7B and Llama-3.1-8B pre
 
 <h4><b>Results</b></h4>
 
-Results from ablation experiments with search space $$lr \in \{1e-05, 5e-06\}$$ and $$bs \in \{4, 8\}$$ show that for both Llama-2 and Llama3.1, KD models with $$\alpha=0.1$$ consistently outperform SFT baselines for both ROUGE-L and factual consistency on CNN-DM benchmark. For XSUM, we saw similar patterns except for rougeL of KD Llama-3.1.
+Results from ablation experiments with search space $$lr \in \{1e-05, 5e-06\}$$ and $$bs \in \{4, 8\}$$ show that for both Llama-2 and Llama3.1, KD models with $$\alpha=0.1$$ consistently outperform SFT baselines for ROUGE-L on both CNN-DM and XSUM benchmark.
 <!-- Secondly, as $$\alpha$$ increases, KD models performance seems to drop, which sheds light on further exploration of KD with $$\alpha$$ values near $$0.1$$. -->
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/work1_externals.png" title="External metrics performance of SFT and KD of Llama-2 and Llama-3.1" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/work1_llama2_hallu.png" title="External metrics performance of SFT and KD of Llama-2 and Llama-3.1" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/work1_llama3.1_hallu.png" title="External metrics performance of SFT and KD of Llama-2 and Llama-3.1" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
-    RougeL and factual consistency from ablation experiments of Llama-2 and Llama-3.1 (the higher the better): SFT baselines (<i>sft</i>) and KD models with <b>α</b>; of 0.1 (<i>kd01</i>), 1.0 (<i>kd1</i>), 10.0 (<i>kd10</i>). Entries are from models trained with <b>lr ∈ {1e-05, 5e-06}</b> and <b>bs ∈ {4, 8}</b>.
+    RougeL on CNN-DM and XSUM hallucination benchmarks from ablation experiments of Llama-2 and Llama-3.1 (the higher the better): SFT baselines (<i>sft</i>) and KD models with <b>α</b>; of 0.1 (<i>kd0.1</i>), 1.0 (<i>kd1.0</i>), 10.0 (<i>kd10.0</i>), 0.002 (<i>kd0.002</i>), 0.05 (<i>kd0.05</i>). Entries are from models trained with <b>lr ∈ {1e-05, 5e-06}</b> and <b>bs ∈ {4, 8}</b>.
 </div>
 
-In addition to this, factual consistency of human lables for XSUM is significantly low in comparison with CNN-DM, despite being reported to have superior performance when evaluated on TRUE, SummaC Benchmark and AnyScale Ranking Test for Hallucinations.
+<!-- In addition to this, factual consistency of human lables for XSUM is significantly low in comparison with CNN-DM, despite being reported to have superior performance when evaluated on TRUE, SummaC Benchmark and AnyScale Ranking Test for Hallucinations. -->
 
 <!-- As shown in the following table, factual support rate on Llama-2 also demonstrates improvement of KD models from SFT baselines on CNN-DM benchmark. -->
 
