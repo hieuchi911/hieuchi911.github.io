@@ -8,6 +8,29 @@ category: research
 # related_publications: true
 ---
 
+<h3><b>Exciting news as of 02/2025</b></h3>
+
+🎉 I'm excited to announce that my first-author research, "Smoothing Out Hallucinations: Mitigating LLM Hallucination with Smoothed Knowledge Distillation", is now available as a [preprint](https://arxiv.org/abs/2502.11306)!
+
+🧐 In this work, we found that hard labels in cross entropy loss carry arbitrary assumptions, leading models to make assumptions when processing information and hallucinate. We used knowledge distillation (KD) to remedy this by using teacher-generated distributions as contextual soft labels. Our experiments showed decent improvements of KD models over SFT baselines in common hallucination benchmarks across internal and external metrics!
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/work1_hallu_cnndm.png" title="External metrics performance of SFT and KD of Llama-2 and Llama-3.1" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/work1_hallu_cnndm.png" title="External metrics performance of SFT and KD of Llama-2 and Llama-3.1" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="caption">
+    Hallucination evaluation results for student models finetuned with supervised finetuning (SFT) and knowledge distillation (KD). Models are evaluated on the CNN/Daily Mail (CNNDM) and XSUM datasets using three metrics: ROUGE-L (↑, %) for n-gram overlap, factual consistency (↑, %) for context grounding, and factual rate (↑, %) for specialized hallucination detection.The results suggest that in most cases KD reduces hallucination compared to SFT, as models trained with soft labels from a teacher model demonstrate improved faithfulness.
+</div>
+
+I would like to express my deepest gratitude to Dr. [Zihao He](https://zihaohe123.github.io/) for his guidance so far throughout this research. I would also like to thank [USC ISI](https://isi.edu/) for providing the hardware infrastructure that made these experiments possible!
+
+
+<h3><b>The journey</b></h3>
+
 <h4><b>Motivation</b></h4>
 
 In my senior year of masters, I conducted an analysis on the optimization aspect in traditional training of decoder transformers with One Hot Encoding (OHE) target distributions and found that: <b><i>by optimizing models against OHE targets of zero entropy, we train them to make assumptions</i></b> ([principle of Maximum Entropy](https://en.wikipedia.org/wiki/Principle_of_maximum_entropy#:~:text=To%20choose%20a%20distribution%20with%20lower%20entropy%20would%20be%20to%20assume%20information%20we%20do%20not%20possess) states that to choose a distribution with entropy lower than allowed by the provided information would be to assume information we do not possess).
@@ -39,7 +62,7 @@ where $$\mathcal{L}_{NLL}$$ is the negative log-likelihood loss, which is the Cr
     Replace OHE targets with context-aware distributions (non-zero probability for other possibilities, e.g. Maths, Arts, English) from a teacher model, the model learns to generate tokens that are more contextually relevant and less hallucinatory.
 </div>
 
-I began working with [senior PhD candidate Zihao He](https://zihaohe123.github.io/) at [SEA (Socially-Embedded AI) Lab](https://lermanlab.github.io/) led by Professor [Kristina Lerman](https://www.isi.edu/people/lerman/about) to study the effects of KD on LLM Hallucinations.
+I began working with Dr. [Zihao He](https://zihaohe123.github.io/) at [SEA (Socially-Embedded AI) Lab](https://lermanlab.github.io/) led by Professor [Kristina Lerman](https://www.isi.edu/people/lerman/about) to study the effects of KD on LLM Hallucinations.
 
 <h4><b>Experiments</b></h4>
 
@@ -52,10 +75,10 @@ Results from ablation experiments with search space $$lr \in \{1e-05, 5e-06\}$$ 
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/work1_llama2_hallu.png" title="External metrics performance of SFT and KD of Llama-2 and Llama-3.1" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/work1_hallu_cnndm.png" title="External metrics performance of SFT and KD of Llama-2 and Llama-3.1" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/work1_llama3.1_hallu.png" title="External metrics performance of SFT and KD of Llama-2 and Llama-3.1" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid loading="eager" path="assets/img/work1_hallu_cnndm.png" title="External metrics performance of SFT and KD of Llama-2 and Llama-3.1" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
